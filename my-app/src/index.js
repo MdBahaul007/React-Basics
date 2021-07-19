@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import * as ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -13,8 +14,8 @@ import reactDom from 'react-dom';
 //     </div>,
 //     document.getElementById("root"));
 
-//above using another method
 
+//above using another method
 // ReactDOM.render(
 //     [
 //         <h1>Hello</h1>,
@@ -22,6 +23,7 @@ import reactDom from 'react-dom';
 
 //     ],
 // document.getElementById("root"));
+
 
 
 //above using another method
@@ -32,6 +34,7 @@ import reactDom from 'react-dom';
 //     </React.Fragment>,
 //     document.getElementById("root")
 // )
+
 
 //above using another method
 // ReactDOM.render(
@@ -49,11 +52,43 @@ import reactDom from 'react-dom';
 //      document.getElementById("root")
 // );
 
-const name="mbm"
+
+// const name="mbm"
+// ReactDOM.render(
+//     <React.Fragment>
+//         <h1>My name is {name}</h1>
+//         <h1>{4*4}</h1>
+//     </React.Fragment>,
+//     document.getElementById("root")
+// );
+
+
+//use of template litrals
+// const fName="Mohd"
+// const lName="bahaul"
+// ReactDOM.render(
+//     <>
+//     <h1>{`my first name is ${fName} and last name is ${lName}`}</h1>
+//     </>,
+//     document.getElementById("root")
+// );
+
+const fName="Mohd"
+const lName="bahaul"
+const date=new Date().toLocaleDateString()
+const time =new Date().toLocaleTimeString()
+const imageURL="https://picsum.photos/200/300";
+const link="//www.google.com"
 ReactDOM.render(
-    <React.Fragment>
-        <h1>My name is {name}</h1>
-        <h1>{4*4}</h1>
-    </React.Fragment>,
+    <>
+    <h1>{`My first name is ${fName} and Last name is ${lName}`}</h1>
+    <p>{`Current date is ${date}`}</p>
+    <p>{`Current time is ${time}`}</p>
+    <h1 contentEditable="true">Hello type anything!!</h1>
+
+    <a href={link} target="_blank" >
+        <img src={imageURL}  alt="random-image"/>
+    </a>
+    </>,
     document.getElementById("root")
 );
