@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import * as ReactDOM from "react-dom";
@@ -73,22 +74,49 @@ import reactDom from 'react-dom';
 //     document.getElementById("root")
 // );
 
-const fName="Mohd"
-const lName="bahaul"
-const date=new Date().toLocaleDateString()
-const time =new Date().toLocaleTimeString()
+// const fName="Mohd"
+// const lName="bahaul"
+// const date=new Date().toLocaleDateString()
+// const time =new Date().toLocaleTimeString()
+// const imageURL="https://picsum.photos/200/300";
+// const link="//www.google.com"
+// ReactDOM.render(
+//     <>
+//     <h1>{`My first name is ${fName} and Last name is ${lName}`}</h1>
+//     <p>{`Current date is ${date}`}</p>
+//     <p>{`Current time is ${time}`}</p>
+//     <h1 contentEditable="true">Hello type anything!!</h1>
+
+//     <a href={link} target="_blank" >
+//         <img src={imageURL}  alt="random-image"/>
+//     </a>
+//     </>,
+//     document.getElementById("root")
+// );
+
+
+
+//adding the CSS in the page
+
+import './index.css';
 const imageURL="https://picsum.photos/200/300";
 const link="//www.google.com"
-ReactDOM.render(
+//PASSING INTERNAL CSS ALSO
+const headingStyle={
+    color:"red",
+    textAlign:"center"
+}
+reactDom.render(
     <>
-    <h1>{`My first name is ${fName} and Last name is ${lName}`}</h1>
-    <p>{`Current date is ${date}`}</p>
-    <p>{`Current time is ${time}`}</p>
-    <h1 contentEditable="true">Hello type anything!!</h1>
-
-    <a href={link} target="_blank" >
-        <img src={imageURL}  alt="random-image"/>
-    </a>
+        <h1 className="heading">My name is MBM</h1>
+        <div className="images">
+            <a href={link} target="_blank">
+            <img src={imageURL} alt="random image"/>
+            <img src={imageURL} alt="random image"/>
+            <img src={imageURL} alt="random image"/>
+            </a>
+        </div>
+        <h1 style={headingStyle}>Mohd Bahaul Mustafa</h1>
     </>,
     document.getElementById("root")
 );
