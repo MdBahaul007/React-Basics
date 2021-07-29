@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
@@ -98,25 +99,81 @@ import reactDom from 'react-dom';
 
 //adding the CSS in the page
 
-import './index.css';
-const imageURL="https://picsum.photos/200/300";
-const link="//www.google.com"
-//PASSING INTERNAL CSS ALSO
-const headingStyle={
-    color:"red",
-    textAlign:"center"
-}
+// import './index.css';
+// const imageURL="https://picsum.photos/200/300";
+// const link="//www.google.com"
+// //PASSING INTERNAL CSS ALSO
+// const headingStyle={
+//     color:"red",
+//     textAlign:"center"
+// }
+// reactDom.render(
+//     <>
+//         <h1 className="heading">My name is MBM</h1>
+//         <div className="images">
+//             <a href={link} target="_blank">
+//             <img src={imageURL} alt="random image"/>
+//             <img src={imageURL} alt="random image"/>
+//             <img src={imageURL} alt="random image"/>
+//             </a>
+//         </div>
+//         <h1 style={headingStyle}>Mohd Bahaul Mustafa</h1>
+//     </>,
+//     document.getElementById("root")
+// );
+
+
+
+
+
+//creating GREETING CARD
+// import './index.css';
+// const date=new Date();
+// const hours = date.getHours();
+// let greetings="";
+// const color={};
+
+// if (hours>=0 && hours<=12){
+   
+//     greetings="Good Morning";
+//     color.color="green";
+// }
+// else if(hours>=13 && hours<=18){
+//     greetings="Good After Noon";
+//     color.color="orange";
+// }
+// else if(hours>=19 && hours<=23){
+//     greetings="Good Night";
+//     color.color="black";
+// }
+
+
+
+// ReactDOM.render(
+//     <>
+//     <div>
+//         <h1><span style={{color:"red"}}>Hello Sir </span> <span style={color}> {greetings} </span> </h1>,
+        
+//     </div>
+//     </>,
+
+//     document.getElementById("root")
+// );
+
+
+
+//components in react
+// import Heading from './Components/Heading';
+// import Paragraph from './Components/Paragraph';
+// import List from './Components/List';
+import App from './App';
 reactDom.render(
     <>
-        <h1 className="heading">My name is MBM</h1>
-        <div className="images">
-            <a href={link} target="_blank">
-            <img src={imageURL} alt="random image"/>
-            <img src={imageURL} alt="random image"/>
-            <img src={imageURL} alt="random image"/>
-            </a>
-        </div>
-        <h1 style={headingStyle}>Mohd Bahaul Mustafa</h1>
+        {/* <Heading/>
+        <Paragraph/>
+        <List/>; */}
+        <App/>
     </>,
     document.getElementById("root")
-);
+)
+//above things is basically done in app.js file; so see app.js file
