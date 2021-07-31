@@ -166,14 +166,19 @@ import reactDom from 'react-dom';
 // import Heading from './Components/Heading';
 // import Paragraph from './Components/Paragraph';
 // import List from './Components/List';
-import App from './App';
-reactDom.render(
-    <>
-        {/* <Heading/>
-        <Paragraph/>
-        <List/>; */}
-        <App/>
-    </>,
-    document.getElementById("root")
-)
+// import App from './App';
+// reactDom.render(
+//     <>
+//         {/* <Heading/>
+//         <Paragraph/>
+//         <List/>; */}
+//         <App/>
+//     </>,
+//     document.getElementById("root")
+// )
 //above things is basically done in app.js file; so see app.js file
+
+
+//Props in React
+
+// Creating the custome element is basically PaymentResponse.
